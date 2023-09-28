@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- pemanggilan navbar.html -->
+    <div id="includedContent"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('includedContent').innerHTML = data;
+            });
+    </script>
+    <script src="data.js" type="text/javascript"></script>
+    <title>Marfel | Beranda</title>
+</head>
+
+<body>
+    <div class="div-home">
+        <button onclick="ngeyel()">Jangan di tekan</button>
+    </div>
+</body>
+
+</html>
